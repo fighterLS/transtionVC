@@ -15,6 +15,9 @@
 		C210E0CD1BCE4167009DCC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C210E0CB1BCE4167009DCC7D /* LaunchScreen.storyboard */; };
 		C210E0D81BCE4167009DCC7D /* transtionVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C210E0D71BCE4167009DCC7D /* transtionVCTests.m */; };
 		C210E0E31BCE4167009DCC7D /* transtionVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C210E0E21BCE4167009DCC7D /* transtionVCUITests.m */; };
+		C210E0F51BCE44C6009DCC7D /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C210E0F41BCE44C6009DCC7D /* NavigationControllerDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		C210E0F81BCE46C8009DCC7D /* CircleTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C210E0F71BCE46C8009DCC7D /* CircleTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
+		C2DEB3A61BCF745E00DCAD4A /* transition.gif in Resources */ = {isa = PBXBuildFile; fileRef = C2DEB3A51BCF745E00DCAD4A /* transition.gif */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		C210E0DE1BCE4167009DCC7D /* transtionVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transtionVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C210E0E21BCE4167009DCC7D /* transtionVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transtionVCUITests.m; sourceTree = "<group>"; };
 		C210E0E41BCE4167009DCC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C210E0F31BCE44C6009DCC7D /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		C210E0F41BCE44C6009DCC7D /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		C210E0F61BCE46C8009DCC7D /* CircleTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTransitionAnimator.h; sourceTree = "<group>"; };
+		C210E0F71BCE46C8009DCC7D /* CircleTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTransitionAnimator.m; sourceTree = "<group>"; };
+		C2DEB3A51BCF745E00DCAD4A /* transition.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = transition.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		C210E0BC1BCE4167009DCC7D /* transtionVC */ = {
 			isa = PBXGroup;
 			children = (
+				C2DEB3A51BCF745E00DCAD4A /* transition.gif */,
 				C210E0C01BCE4167009DCC7D /* AppDelegate.h */,
 				C210E0C11BCE4167009DCC7D /* AppDelegate.m */,
 				C210E0C31BCE4167009DCC7D /* ViewController.h */,
@@ -110,6 +119,10 @@
 				C210E0CB1BCE4167009DCC7D /* LaunchScreen.storyboard */,
 				C210E0CE1BCE4167009DCC7D /* Info.plist */,
 				C210E0BD1BCE4167009DCC7D /* Supporting Files */,
+				C210E0F31BCE44C6009DCC7D /* NavigationControllerDelegate.h */,
+				C210E0F41BCE44C6009DCC7D /* NavigationControllerDelegate.m */,
+				C210E0F61BCE46C8009DCC7D /* CircleTransitionAnimator.h */,
+				C210E0F71BCE46C8009DCC7D /* CircleTransitionAnimator.m */,
 			);
 			path = transtionVC;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C210E0CD1BCE4167009DCC7D /* LaunchScreen.storyboard in Resources */,
+				C2DEB3A61BCF745E00DCAD4A /* transition.gif in Resources */,
 				C210E0CA1BCE4167009DCC7D /* Assets.xcassets in Resources */,
 				C210E0C81BCE4167009DCC7D /* Main.storyboard in Resources */,
 			);
@@ -270,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C210E0F51BCE44C6009DCC7D /* NavigationControllerDelegate.m in Sources */,
 				C210E0C51BCE4167009DCC7D /* ViewController.m in Sources */,
 				C210E0C21BCE4167009DCC7D /* AppDelegate.m in Sources */,
 				C210E0BF1BCE4167009DCC7D /* main.m in Sources */,
+				C210E0F81BCE46C8009DCC7D /* CircleTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +514,7 @@
 				C210E0E91BCE4167009DCC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C210E0EA1BCE4167009DCC7D /* Build configuration list for PBXNativeTarget "transtionVCTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				C210E0EC1BCE4167009DCC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C210E0ED1BCE4167009DCC7D /* Build configuration list for PBXNativeTarget "transtionVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				C210E0EF1BCE4167009DCC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
